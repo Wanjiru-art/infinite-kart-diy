@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Infinite Kart DIY</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1> Infinite Kart DIY</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html" class="active">Products</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- PAGE BANNER -->
+    <section class="page-banner">
+        <h2>Our Products</h2>
+        <p>Choose from our wide range of paint by numbers kits</p>
+    </section>
+
+    <!-- PRODUCTS SECTION -->
+    <section class="products-section">
+
+        <div class="all-products-grid">
+
+            <div class="product-card">
+                <img src="images/product1.jpg" alt="Product 1">
+                <div class="card-info">
+                    <span class="category">Animals</span>
+                    <h3>Zebra Bath Kit</h3>
+                    <p>A fun and colorful zebra themed canvas kit perfect for beginners.</p>
+                    <div class="product-meta">
+                        <span class="price">KES 1,500</span>
+                        <span class="availability in-stock">In Stock</span>
+                    </div>
+                    <button class="btn-cart" onclick="addToCart('Zebra Bath Kit')">
+                        <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="images/product2.jpg" alt="Product 2">
+                <div class="card-info">
+                    <span class="category">Animals</span>
+                    <h3>Majestic Horse Kit</h3>
+                    <p>A beautiful floral horse canvas for intermediate painters.</p>
+                    <div class="product-meta">
+                        <span class="price">KES 1,800</span>
+                        <span class="availability in-stock">In Stock</span>
+                    </div>
+                    <button class="btn-cart" onclick="addToCart('Majestic Horse Kit')">
+                        <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="images/product3.jpg" alt="Product 3">
+                <div class="card-info">
+                    <span class="category">Animals</span>
+                    <h3>Cool Cat Kit</h3>
+                    <p>An adorable black cat canvas great for all skill levels.</p>
+                    <div class="product-meta">
+                        <span class="price">KES 1,200</span>
+                        <span class="availability in-stock">In Stock</span>
+                    </div>
+                    <button class="btn-cart" onclick="addToCart('Cool Cat Kit')">
+                        <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="images/product4.jpg" alt="Product 4">
+                <div class="card-info">
+                    <span class="category">Animals</span>
+                    <h3>Peacock Paradise Kit</h3>
+                    <p>A vibrant and colorful peacock canvas for advanced painters.</p>
+                    <div class="product-meta">
+                        <span class="price">KES 2,000</span>
+                        <span class="availability in-stock">In Stock</span>
+                    </div>
+                    <button class="btn-cart" onclick="addToCart('Peacock Paradise Kit')">
+                        <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="images/product5.jpg" alt="Product 5">
+                <div class="card-info">
+                    <span class="category">Scenery</span>
+                    <h3>Cars Adventure Kit</h3>
+                    <p>A fun cars themed canvas perfect for kids and beginners.</p>
+                    <div class="product-meta">
+                        <span class="price">KES 1,300</span>
+                        <span class="availability in-stock">In Stock</span>
+                    </div>
+                    <button class="btn-cart" onclick="addToCart('Cars Adventure Kit')">
+                        <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="images/product6.jpg" alt="Product 6">
+                <div class="card-info">
+                    <span class="category">Characters</span>
+                    <h3>Heroes Canvas Kit</h3>
+                    <p>A superhero themed canvas great for all ages.</p>
+                    <div class="product-meta">
+                        <span class="price">KES 1,600</span>
+                        <span class="availability out-of-stock">Out of Stock</span>
+                    </div>
+                    <button class="btn-cart" disabled>
+                        <i class="fa-solid fa-cart-shopping"></i> Out of Stock
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="images/product7.jpg" alt="Product 7">
+                <div class="card-info">
+                    <span class="category">Characters</span>
+                    <h3>Rapunzel Dream Kit</h3>
+                    <p>A magical fairytale canvas for creative painters.</p>
+                    <div class="product-meta">
+                        <span class="price">KES 1,700</span>
+                        <span class="availability in-stock">In Stock</span>
+                    </div>
+                    <button class="btn-cart" onclick="addToCart('Rapunzel Dream Kit')">
+                        <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="images/product8.jpg" alt="Product 8">
+                <div class="card-info">
+                    <span class="category">Scenery</span>
+                    <h3>Ocean Wave Kit</h3>
+                    <p>A stunning Japanese wave canvas for intermediate painters.</p>
+                    <div class="product-meta">
+                        <span class="price">KES 1,900</span>
+                        <span class="availability in-stock">In Stock</span>
+                    </div>
+                    <button class="btn-cart" onclick="addToCart('Ocean Wave Kit')">
+                        <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="images/product9.jpg" alt="Product 9">
+                <div class="card-info">
+                    <span class="category">Scenery</span>
+                    <h3>Mountain Landscape Kit</h3>
+                    <p>A breathtaking mountain scenery canvas for nature lovers.</p>
+                    <div class="product-meta">
+                        <span class="price">KES 2,100</span>
+                        <span class="availability in-stock">In Stock</span>
+                    </div>
+                    <button class="btn-cart" onclick="addToCart('Mountain Landscape Kit')">
+                        <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="images/product10.jpg" alt="Product 10">
+                <div class="card-info">
+                    <span class="category">Scenery</span>
+                    <h3>Venice Canal Kit</h3>
+                    <p>A romantic Italian scenery canvas for advanced painters.</p>
+                    <div class="product-meta">
+                        <span class="price">KES 2,200</span>
+                        <span class="availability in-stock">In Stock</span>
+                    </div>
+                    <button class="btn-cart" onclick="addToCart('Venice Canal Kit')">
+                        <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3> Infinite Kart DIY</h3>
+                <p>Bringing color and joy to your world, one kit at a time.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Infinite Kart DIY. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
