@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Infinite Kart DIY</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1>🎨 Infinite Kart DIY</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html" class="btn-login">Login</a></li>
+            <li>
+                <a href="cart.html" class="cart-icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span id="cartCount">0</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- PAGE BANNER -->
+    <section class="page-banner">
+        <h2>Shopping Cart</h2>
+        <p>Review your selected items</p>
+    </section>
+
+    <!-- CART SECTION -->
+    <section class="cart-section">
+        <div class="cart-container">
+            <div id="cartItems">
+                <!-- Cart items will appear here -->
+            </div>
+            <div id="emptyCart" class="empty-cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <h3>Your cart is empty!</h3>
+                <p>Add some products to get started</p>
+                <a href="products.html" class="btn-primary">Shop Now</a>
+            </div>
+            <div id="cartSummary" class="cart-summary" style="display:none;">
+                <h3>Order Summary</h3>
+                <div class="summary-row">
+                    <span>Subtotal:</span>
+                    <span id="cartSubtotal">KES 0</span>
+                </div>
+                <div class="summary-row">
+                    <span>Delivery:</span>
+                    <span>KES 200</span>
+                </div>
+                <div class="summary-row total">
+                    <span>Total:</span>
+                    <span id="cartTotal">KES 200</span>
+                </div>
+                <button class="btn-submit" onclick="checkout()">
+                    <i class="fa-solid fa-credit-card"></i> Proceed to Checkout
+                </button>
+                <button class="btn-clear" onclick="clearCart()">
+                    <i class="fa-solid fa-trash"></i> Clear Cart
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>🎨 Infinite Kart DIY</h3>
+                <p>Bringing color and joy to your world, one kit at a time.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button id="darkModeToggle" onclick="toggleDarkMode()">
+        <i class="fa-solid fa-moon"></i>
+    </button>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Infinite Kart DIY. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <button id="backToTop" onclick="scrollToTop()">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
