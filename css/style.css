@@ -213,7 +213,7 @@ footer {
 }
 
 .promo-content p {
-    color: #f0f0f0;
+    color: #e74c3c;
     font-size: 1.1rem;
     margin-bottom: 25px;
 }
@@ -620,4 +620,123 @@ footer {
 
 #backToTop:hover {
     background-color: #c0392b;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Tablets (max 768px) */
+@media (max-width: 768px) {
+
+    /* Navigation */
+    .navbar {
+        flex-direction: column;
+        padding: 15px 20px;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Hero */
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    .hero-content {
+        padding: 30px 20px;
+    }
+
+    /* Products Grid */
+    .products-grid,
+    .all-products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* About Grid */
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* VMV Grid */
+    .vmv-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Services Grid */
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Contact Grid */
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+/* Mobile phones (max 480px) */
+@media (max-width: 480px) {
+
+    /* Navigation */
+    .nav-links {
+        gap: 10px;
+        font-size: 0.9rem;
+    }
+
+    /* Hero */
+    .hero {
+        height: 400px;
+    }
+
+    .hero-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        margin-right: 0;
+    }
+
+    /* Products Grid */
+    .products-grid,
+    .all-products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Services Grid */
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* VMV Grid */
+    .vmv-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Section padding */
+    .about-section,
+    .products-section,
+    .services-section,
+    .contact-section {
+        padding: 40px 20px;
+    }
 }
