@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite Kart DIY - Paint By Numbers</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!--Navigation-->
+    <nav class="navbar">
+        <div class="logo">
+    <img src="images/logo.jpg" alt="Infinite Kart DIY Logo">
+    <h1>Infinite Kart DIY</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html" class="btn-login">Login</a></li>
+            <li>
+        <a href="cart.html" class="cart-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cartCount">0</span>
+        </a>
+    </li>
+        </ul>
+        <button id="darkModeToggle" onclick="toggleDarkMode()">
+        <i class="fa-solid fa-moon"></i>
+    </button>
+    </nav>
+    <!-- HERO SECTION -->
+     <section class="hero">
+        <div class="hero-content">
+            <h2>Discover the Joy of Painting</h2>
+            <p>Premium paint by numbers kit for beginners and experts</p>
+            <div class="hero-buttons">
+                <a href="products.html" class="btn-primary">Shop Now</a>
+            <a href="about.html" class="btn-secondary">Learn More</a>
+            </div>
+        </div>
+     </section>
+     <!-- FEATURED PRODUCTS -->
+<section class="featured-products">
+    <h2>Featured Products</h2>
+    <p class="section-subtitle">Handpicked kits just for you</p>
+    <div class="products-grid">
+
+        <div class="product-card">
+            <img src="images/product1.jpg" alt="Zebra Paint Kit">
+            <div class="card-info">
+                <h3>Zebra Bath Kit</h3>
+                <p>A fun and colorful zebra themed kit</p>
+                <span class="price">KES 1,500</span>
+                <a href="products.html" class="btn-primary">Shop Now</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="images/product2.jpg" alt="Horse Paint Kit">
+            <div class="card-info">
+                <h3>Majestic Horse Kit</h3>
+                <p>A beautiful floral horse canvas</p>
+                <span class="price">KES 1,800</span>
+                <a href="products.html" class="btn-primary">Shop Now</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="images/product3.jpg" alt="Cat Paint Kit">
+            <div class="card-info">
+                <h3>Cool Cat Kit</h3>
+                <p>An adorable black cat canvas</p>
+                <span class="price">KES 1,200</span>
+                <a href="products.html" class="btn-primary">Shop Now</a>
+            </div>
+        </div>
+
+    </div>
+    <a href="products.html" class="btn-secondary view-all">View All Products</a>
+</section>
+<!-- PROMOTIONAL OFFER -->
+ <section class="Promo-banner">
+    <div class="promo-content">
+        <h2> Limited Time Offer!</h2>
+        <p> Get 20% off your first order - use code <strong>WELCOME20</strong>
+            <a href="products.html" class="btn-primary">Claim Offer</a>
+    </div>
+ </section>
+     <!-- FOOTER -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-brand">
+            <h3> Infinite Kart DIY</h3>
+            <p>Bringing color and joy to your world, one kit at a time.</p>
+        </div>
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2025 Infinite Kart DIY. All Rights Reserved.</p>
+    </div>
+</footer>
+<!-- BACK TO TOP BUTTON -->
+<button id="backToTop" onclick="scrollToTop()">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
