@@ -49,7 +49,7 @@ BROWSER REQUIREMENTS
 HOW TO RUN THE WEBSITE
 ================================================================
 Option 1 - Live Website:
-Visit: https://wanjiru-art.github.io/infinite-kart-diy
+Visit: https://infinite-kart-diy.netlify.app/
 
 Option 2 - Local:
 1. Download or clone the repository

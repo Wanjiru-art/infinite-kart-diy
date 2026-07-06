@@ -1069,3 +1069,21 @@ body.dark-mode .page-banner {
 body.dark-mode .promo-banner {
     background-color: #0f3460;
 }
+
+/* ===== LOGO ===== */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 45px;
+    width: auto;
+    border-radius: 5px;
+}
+
+.logo h1 {
+    color: #fff;
+    font-size: 1.5rem;
+}
